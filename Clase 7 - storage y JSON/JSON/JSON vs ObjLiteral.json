@@ -1,0 +1,8 @@
+ {
+    "nombre":"maria",
+    "dni": 1,
+    "domicilio":{ 
+        "calle": "panama",
+        "altura": 892
+    }
+}
