@@ -14,12 +14,13 @@ var pablo = {
 //Cargamos la variable a ser persistida en memoria
 var personasList = [maria, pablo];
 console.log("personasList:", personasList);
-//Guardamos
+//1) Guardamos localStorage Siempre guarda en texto
+//2) JSON.stringify(personasList)
 localStorage.setItem("personas", JSON.stringify(personasList));
 console.log("localStorage:", localStorage);
-//Recuperamos
+//3) Recuperamos - localStorage.getItem
 var personasTexto = localStorage.getItem("personas");
-//Parseamos
+//4) Parseamos JSON.parse
 var objPersonas = JSON.parse(personasTexto);
 //Mostramos
 console.log(objPersonas);
