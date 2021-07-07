@@ -25,3 +25,16 @@ const constructorLista = (usuarioActual) => {
   document.getElementById("acciones").innerHTML = vistaDeAccionesCompradas;
   console.log(usuarioActual);
 };
+/************************************************************************/
+const constructorLista = () => {
+  //4) mostrar las acciones compradas al final
+  var selectCustom = `<select>`;
+  listadoAccionesDisponibles.forEach(
+    (accionAlias) =>
+      (selectCustom += `<li onclick='alert("${accionAlias.nombre}")'>${accionAlias.nombre} - ${accionAlias.valor}</li>`)
+  );
+  selectCustom += `</select>`;
+
+  document.getElementById("accionesDisponibles").innerHTML = selectCustom;
+  console.log(usuarioActual);
+};
