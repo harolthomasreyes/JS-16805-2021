@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="usuario"></div>
+    <input onchange="cargarUsuario(event)" type="text" id="txtUserName" />
+    <br />
+
+    <div id="accionesDisponibles"></div>
+    <div id="accionValor"></div>
+    <div id="accionCantidad"></div>
+
+    <br />
+    <button onclick="comprarAccion()" id="btnComprar">Comprar</button>
+    <button onclick="" id="btnTerminar">Terminar</button>
+
+    <script>
+      //Error dado que la funcion aun no existe
+      //cambiarRojo();
+    </script>
+    <script src="./config/globalVariables.js"></script>
+
+    <script src="./class/usuario.js"></script>
+    <script src="./class/acciones.js"></script>
+    <script src="./functions/buttons/btn.js"></script>
+    <script src="./functions/init.js"></script>
+    <script src="./functions/stocksLoading.js"></script>
+    <script src="./functions/managerViewer.js"></script>
+    <script src="./functions/userLogin.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
