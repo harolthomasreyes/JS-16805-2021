@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form id="formEmail">
+      <ul>
+        <li>
+          <label for="name">Nombre:</label>
+          <input type="text" id="txtname" name="user_name" />
+        </li>
+        <li>
+          <label for="mail">Correo electrónico:</label>
+          <input type="email" id="txtmail" name="user_mail" />
+        </li>
+        <li>
+          <label for="msg">Mensaje:</label>
+          <textarea id="txtmsg" name="user_message"></textarea>
+        </li>
+      </ul>
+
+      <div>
+        <input type="radio" id="huey" name="drone" value="huey" checked />
+        <label for="huey">Huey</label>
+      </div>
+
+      <div>
+        <input type="radio" id="dewey" name="drone" value="dewey" />
+        <label for="dewey">Dewey</label>
+      </div>
+
+      <div>
+        <input type="radio" id="louie" name="drone" value="louie" />
+        <label for="louie">Louie</label>
+      </div>
+
+      <input type="checkbox" id="1" name="1" value="1" />
+      <input type="checkbox" id="2" name="2" value="2" />
+      <input type="checkbox" id="3" name="3" value="3" />
+      <input type="checkbox" id="4" name="4" value="4" />
+
+      <button>click me</button>
+    </form>
+
+    <hr />
+    <form id="encuesta">
+      <ul>
+        <li>
+          <label for="product">product:</label>
+          <input type="text" id="txtproduct" name="product" />
+        </li>
+
+        <li>
+          <label for="txtdevolucion">devolucion:</label>
+          <textarea id="txtdevolucion" name="devolucion"></textarea>
+        </li>
+      </ul>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
