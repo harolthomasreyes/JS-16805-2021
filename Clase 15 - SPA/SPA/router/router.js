@@ -1,8 +1,9 @@
 /*RUTAS*/
 const routes = [
-  { path: "/index", action: "index" },
-  { path: "/contact", action: "contact" },
-  { path: "/about", action: "about" },
+  { path: "/index", action: "index", isAdmin: false },
+  { path: "/contact", action: "contact", isAdmin: false },
+  { path: "/about", action: "about", isAdmin: false },
+  { path: "/control", action: "control", isAdmin: true },
 ];
 
 const router = () => {
@@ -26,6 +27,11 @@ const router = () => {
       break;
     case routes[2].action: //about
       $("#app").html("Welcome to About");
+      break;
+    case routes[3].action: //control
+      if (pathToGo.isAdmin && sessionStorage.getItem("userisadmin") === "1")
+        $("#app").html("Sos admin =)");
+      else location = "/index.html#/index";
       break;
     default:
       break;
